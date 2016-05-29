@@ -1,0 +1,22 @@
+<h2>Show contact</h2>
+
+<table>
+	<tr>
+		<td>Nama</td>
+		<td>
+			<strong>
+				<%= @contact.name %>
+			</strong>
+		</td>
+	</tr>
+	<tr>
+		<td>Nomor HP</td>
+		<td>
+			<strong>
+				<%= @contact.nomor_hp %>
+			</strong>
+		</td>
+	</tr>
+</table>
+
+<p><%= link_to 'List all contacts', contacts_path %></p>

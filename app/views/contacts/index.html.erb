@@ -1,0 +1,22 @@
+<h2>Listing of all contact</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Nama</th>
+			<th>Nomor HP</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @contacts.each do |c| %>
+		<tr>
+			<td><%= c.name %></td>
+			<td><%= c.nomor_hp %></td>
+			<td><%= link_to 'show detail', c %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<p><%= link_to 'add new contact', new_contact_path %></p>
