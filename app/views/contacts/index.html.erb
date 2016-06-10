@@ -13,7 +13,10 @@
 		<tr>
 			<td><%= c.name %></td>
 			<td><%= c.nomor_hp %></td>
-			<td><%= link_to 'show detail', c %></td>
+			<td>
+				<%= link_to 'Edit', edit_contact_path(c) %>
+				<%= link_to 'show detail', contact_path(c) %>
+			</td>
 		</tr>
 		<% end %>
 	</tbody>

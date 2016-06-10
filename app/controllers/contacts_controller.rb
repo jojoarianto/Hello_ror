@@ -3,6 +3,14 @@ class ContactsController < ApplicationController
 		@contacts = Contact.all
 	end
 
+	def edit
+		@contact = Contact.find(params[:id])
+	end
+
+	def update
+		@contact = Contact.find(params[:id])
+	end
+
 	def new
 	end
 

@@ -1,0 +1,17 @@
+<h2>Edit a contact</h2>
+
+<%= form_for :contact, url: contacts_path do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name, :value => @contact.name %>
+	</p>
+	<p>
+		<%= f.label :nomor_hp %>
+		<%= f.text_field :nomor_hp %>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
+
+<p><%= link_to 'Back to all contacts', contacts_path %></p>
